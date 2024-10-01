@@ -103,7 +103,7 @@ with open('relatedMovies.csv', 'w', newline='', encoding='utf-8') as file:
             title = related.get('name', '')
             wUrl = related.get('wUrl', '')
             yUrl = related.get('yUrl', '')
-            description = related.get('description', '')  # Assuming 'wTeaser' holds the description
+            description = related.get('description', '')
             
             # Write movie data to the CSV file
             writer.writerow([movie, title, wUrl, yUrl, description])
